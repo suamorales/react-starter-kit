@@ -9,6 +9,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 const ContextType = {
   // Enables critical path CSS rendering
@@ -40,6 +41,8 @@ const ContextType = {
  *     container,
  *   );
  */
+injectTapEventPlugin();
+
 class App extends React.PureComponent {
 
   static propTypes = {
